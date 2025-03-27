@@ -11,6 +11,7 @@ async_session = async_sessionmaker(bind=engine, expire_on_commit=False)
 class Base(AsyncAttrs, DeclarativeBase):
     pass
 
+
 class User(Base):
     __tablename__ = 'users'
 
